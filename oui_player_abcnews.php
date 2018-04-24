@@ -40,7 +40,9 @@ namespace Oui\Player {
             protected static $glue = array('video/embed?id=', '&amp;', '&amp;');
         }
 
-        if (txpinterface === 'admin') {
+        global $event;
+
+        if (txpinterface === 'admin' && $event === 'prefs') {
             Abcnews::getInstance();
         }
     }
