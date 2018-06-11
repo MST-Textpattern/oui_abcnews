@@ -32,7 +32,7 @@ namespace Oui\Player {
         {
             protected static $patterns = array(
                 'video' => array(
-                    'scheme' => '#^(http|https)://(abcnews\.go\.com/([A-Z]+/)?video)/[^0-9]+([0-9]+)$#i',
+                    'scheme' => '#^(http|https)://(abcnews\.go\.com/([a-zA-Z]+/)?video)/[^0-9]+([0-9]+)$#i',
                     'id'     => '4',
                 ),
             );
@@ -40,10 +40,6 @@ namespace Oui\Player {
             protected static $glue = array('video/embed?id=', '&amp;', '&amp;');
         }
 
-        global $event;
-
-        if (txpinterface === 'admin' && ($event === 'prefs' || $event === 'plugin_prefs.oui_player_abcnews')) {
-            Abcnews::getInstance();
-        }
+        register_callback('Oui\Player\Abcnews::getProvider', 'oui_player', 'plug_providers');
     }
 }
