@@ -1,8 +1,8 @@
 #Default language, en-us, en-gb
 #@admin
 oui_player_provider_abcnews => ABC News
-oui_player_abcnews => ABC News player (oui_player_abcnews)
-oui_player_abcnews_prefs => Display the ABC News player prefs
+oui_player_abcnews => ABC News player
+oui_player_abcnews_prefs => Display the ABC News player preferences
 oui_player_abcnews_width => Player width
 oui_player_abcnews_height => Player height
 oui_player_abcnews_ratio => Player ratio by default
