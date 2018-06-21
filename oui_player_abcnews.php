@@ -40,6 +40,5 @@ namespace Oui\Player {
             protected static $glue = array('video/embed?id=', '&amp;', '&amp;');
         }
 
-        register_callback('Oui\Player\Abcnews::getProvider', 'oui_player', 'plug_providers');
     }
 }
