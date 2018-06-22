@@ -114,27 +114,27 @@ h2. Examples
 
 h3. Embed a player using the preference values
 
-bc(language-markup xml). <txp:oui_player />
+bc(language-markup). <txp:oui_player />
 
 "oui_player":https://github.com/NicolasGraph/oui_player preference related field value: @https://abcnews.go.com/video/embed?id=55148128@.
 
 h3. Embed a player by defining its provider and a media ID through attributes
 
-bc(language-markup xml). <txp:oui_player provider="abcnews" play="55148128" />
+bc(language-markup). <txp:oui_player provider="abcnews" play="55148128" />
 
 …or:
 
-bc(language-markup xml). <txp:oui_abcnews play="55148128" />
+bc(language-markup). <txp:oui_abcnews play="55148128" />
 
 h3. Conditionally embed a player using attributes
 
-bc(language-markup xml).. <txp:oui_if_player provider="abcnews" play="https://abcnews.go.com/Technology/video/nintendo-release-nes-classic-edition-console-55148128">
+bc(language-markup).. <txp:oui_if_player provider="abcnews" play="https://abcnews.go.com/Technology/video/nintendo-release-nes-classic-edition-console-55148128">
     <txp:oui_player />
 </txp:oui_if_player>
 
 p. …or:
 
-bc(language-markup xml).. <txp:oui_if_abcnews play="https://abcnews.go.com/Technology/video/nintendo-release-nes-classic-edition-console-55148128">
+bc(language-markup).. <txp:oui_if_abcnews play="https://abcnews.go.com/Technology/video/nintendo-release-nes-classic-edition-console-55148128">
     <txp:oui_abcnews />
 </txp:oui_if_abcnews>
 
