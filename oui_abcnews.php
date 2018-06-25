@@ -1,11 +1,11 @@
 <?php
 
 /*
- * This file is part of oui_player_abcnews,
+ * This file is part of oui_abcnews,
  * a oui_player v2+ extension to easily embed
  * ABC News customizable video players in Textpattern CMS.
  *
- * https://github.com/NicolasGraph/oui_player_abcnews
+ * https://github.com/NicolasGraph/oui_abcnews
  *
  * Copyright (C) 2018 Nicolas Morand
  *

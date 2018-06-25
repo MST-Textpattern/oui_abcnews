@@ -1,5 +1,5 @@
 {
-    "name": "oui/oui_player_abcnews",
+    "name": "oui/oui_abcnews",
     "description": "Abcnews extension for oui_player",
     "keywords": [
         "textpattern",
@@ -8,7 +8,7 @@
         "video",
         "abcnews"
     ],
-    "homepage": "https://github.com/NicolasGraph/oui_player_abcnews",
+    "homepage": "https://github.com/NicolasGraph/oui_abcnews",
     "license": "GPL-2.0-only",
     "type": "textpattern-plugin",
     "authors": [
@@ -19,8 +19,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/NicolasGraph/oui_player_abcnews/issues",
-        "source": "https://github.com/NicolasGraph/oui_player_abcnews"
+        "issues": "https://github.com/NicolasGraph/oui_abcnews/issues",
+        "source": "https://github.com/NicolasGraph/oui_abcnews"
     },
     "require": {
         "textpattern/lock": "4.6.*",
