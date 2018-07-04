@@ -57,13 +57,3 @@ namespace Oui {
         }
     }
 }
-
-namespace {
-    function oui_abcnews($atts) {
-        return oui_player(array_merge(array('provider' => 'abcnews'), $atts));
-    }
-
-    function oui_if_abcnews($atts, $thing) {
-        return oui_if_player(array_merge(array('provider' => 'abcnews'), $atts), $thing);
-    }
-}
