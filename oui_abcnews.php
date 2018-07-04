@@ -36,10 +36,8 @@ namespace Oui {
         class Abcnews extends Provider
         {
             protected static $patterns = array(
-                'video' => array(
-                    'scheme' => '#^(http|https)://(abcnews\.go\.com/([a-zA-Z]+/)?video)/[^0-9]+([0-9]+)$#i',
-                    'id'     => '4',
-                ),
+                'scheme' => '#^(http|https)://(abcnews\.go\.com/([a-zA-Z]+/)?video)/[^0-9]+([0-9]+)$#i',
+                'id'     => '4',
             );
             protected static $src = '//abcnews.go.com/';
             protected static $glue = array('video/embed?id=', '&amp;', '&amp;');
