@@ -44,15 +44,9 @@ namespace Oui {
             protected static $src = '//abcnews.go.com/';
             protected static $glue = array('video/embed?id=', '&amp;', '&amp;');
             protected static $dims = array(
-                'width'     => array(
-                    'default' => '640',
-                ),
-                'height'    => array(
-                    'default' => '360',
-                ),
-                'ratio'     => array(
-                    'default' => '',
-                ),
+                'width'  => '640',
+                'height' => '360',
+                'ratio'  => '',
             );
         }
     }
