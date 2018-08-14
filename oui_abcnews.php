@@ -29,23 +29,22 @@
  * @package Oui\Player
  */
 
-namespace Oui {
+namespace Oui;
 
-    if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Provider')) {
 
-        class Abcnews extends Provider
-        {
-            protected static $patterns = array(
-                'scheme' => '#^(http|https)://(abcnews\.go\.com/([a-zA-Z]+/)?video)/[^0-9]+([0-9]+)$#i',
-                'id'     => '4',
-            );
-            protected static $src = '//abcnews.go.com/';
-            protected static $glue = array('video/embed?id=', '&amp;', '&amp;');
-            protected static $dims = array(
-                'width'  => '640',
-                'height' => '360',
-                'ratio'  => '',
-            );
-        }
+    class Abcnews extends Provider
+    {
+        protected static $srcBase = '//abcnews.go.com/';
+        protected static $srcGlue = array('video/embed?id=', '&amp;', '&amp;');
+        protected static $iniDims = array(
+            'width'  => '640',
+            'height' => '360',
+            'ratio'  => '',
+        );
+        protected static $mediaPatterns = array(
+            'scheme' => '#^https?://(abcnews\.go\.com/([a-zA-Z]+/)?video)/[^0-9]+([0-9]+)$#i',
+            'id'     => '3',
+        );
     }
 }
