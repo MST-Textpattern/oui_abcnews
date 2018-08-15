@@ -38,9 +38,13 @@ if (class_exists('Oui\Provider')) {
         protected static $srcBase = '//abcnews.go.com/';
         protected static $srcGlue = array('video/embed?id=', '&amp;', '&amp;');
         protected static $iniDims = array(
-            'width'  => '640',
-            'height' => '360',
-            'ratio'  => '',
+            'width'      => '640',
+            'height'     => '360',
+            'ratio'      => '',
+            'responsive' => array(
+                'default' => 'false',
+                'valid'   => array('true', 'false'),
+            ),
         );
         protected static $mediaPatterns = array(
             'scheme' => '#^https?://(abcnews\.go\.com/([a-zA-Z]+/)?video)/[^0-9]+([0-9]+)$#i',
