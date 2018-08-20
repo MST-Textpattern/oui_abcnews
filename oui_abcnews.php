@@ -31,9 +31,9 @@
 
 namespace Oui;
 
-if (class_exists('Oui\Provider')) {
+if (class_exists('Oui\Player\Provider')) {
 
-    class Abcnews extends Provider
+    class Abcnews extends Player\Provider
     {
         protected static $srcBase = '//abcnews.go.com/';
         protected static $srcGlue = array('video/embed?id=', '&amp;', '&amp;');
